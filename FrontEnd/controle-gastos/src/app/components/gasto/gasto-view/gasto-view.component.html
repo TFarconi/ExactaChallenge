@@ -1,0 +1,28 @@
+<mat-card class="card">
+    <mat-card-title>
+        Visualizar Gasto
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome da pessoa" [(ngModel)]="gasto.nomePessoa" class="input-text" name="nomePessoa" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição do gasto" [(ngModel)]="gasto.descricao" class="input-text" name="descricao" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="datetime-local" placeholder="Data/Hora do gasto" [(ngModel)]="gasto.dataHora" class="input-text" name="dataHora" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor do gasto" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+                [(ngModel)]="gasto.valor" class="input-text valor" name="valor" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tag do gasto" [(ngModel)]="gasto.tag" class="input-text" name="tag" disabled>
+        </mat-form-field>
+    </form>
+    <div class="align-buttons">
+        <button mat-raised-button color="primary" [routerLink]="['/']">
+            Voltar
+        </button>
+    </div>
+</mat-card> 

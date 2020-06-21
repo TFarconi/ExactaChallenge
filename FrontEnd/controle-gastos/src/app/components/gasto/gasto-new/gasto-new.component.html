@@ -1,0 +1,36 @@
+<mat-card class="card">
+    <mat-card-title>
+        Cadastrar Gasto
+    </mat-card-title>
+    <form [formGroup]="formGroup">
+        <mat-form-field>
+            <input matInput placeholder="Nome da pessoa" name="nomePessoa" maxlength="70" required formControlName="nomePessoa">
+            <mat-error>{{mensagemObrigatoriedade}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição do gasto" name="descricao" maxlength="200" required formControlName="descricao">
+            <mat-error>{{mensagemObrigatoriedade}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="datetime-local" placeholder="Data/Hora do gasto" name="dataHora" required formControlName="dataHora">
+            <mat-error>{{mensagemObrigatoriedade}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor do gasto" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+                name="valor" maxlength="10" required formControlName="valor" class="valor">
+            <mat-error>{{mensagemObrigatoriedade}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tag do gasto" name="tag" maxlength="20" required formControlName="tag">
+            <mat-error>{{mensagemObrigatoriedade}}</mat-error>
+        </mat-form-field>
+    </form>
+    <div class="align-buttons">
+        <button color="warn" mat-raised-button [routerLink]="['/']">
+            Cancelar
+        </button>
+        <button color="primary" mat-raised-button (click)="salvar()">
+            Salvar
+        </button>
+    </div>
+</mat-card>

@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+}
+
+.table-header {
+    text-align: left;
+    font-size: 110%;
+    font-weight: bold;
+    color: #673ab7;
+}
+
+.view {
+    color: #673ab7;
+}
+
+button {
+    margin: 1% 1% 1% 0%;
+    float: right;
+}
+
+a {
+    cursor: pointer;
+}

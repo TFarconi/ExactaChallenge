@@ -1,0 +1,25 @@
+.card {
+    margin: 1% 1% 1% 1%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 1% 1% 0% 0%;
+}
+
+.mat-card-title {
+    margin-bottom: 30px;
+}
+
+.align-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.valor {
+    text-align: left !important;
+}

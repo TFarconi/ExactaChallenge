@@ -1,0 +1,34 @@
+
+.header {
+    display: flex;
+}
+
+.logo-image {
+    max-height: 50px;
+    display: flex;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title-text{
+    padding-left: 1rem;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.menu-item {
+    padding-right: 1rem;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.menu-item:focus {
+    outline:0;
+}
