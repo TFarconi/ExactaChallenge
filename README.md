@@ -1,8 +1,9 @@
-#Projeto para Controle de Gastos
-###Descrição
+# Projeto para Controle de Gastos
+
+### Descrição
 Projeto desenvolvido com intuito de gerenciar os gastos de uma ou mais pessoas.
 
-###Tecnologias utilizadas
+### Tecnologias utilizadas
 * Java 11
 * JPA
 * Hibernate
@@ -14,5 +15,5 @@ Projeto desenvolvido com intuito de gerenciar os gastos de uma ou mais pessoas.
 * Mockito/JUnit
 * Database MySql
 
-###Desenvolvido por
+### Desenvolvido por
 Thiago Lopes Farconi. 21/06/2020
